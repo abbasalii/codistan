@@ -62,17 +62,20 @@
 				background-color: #D7D5D5;
 			}
 			#ver-line-1 {
-				height: 27%;
+				height: 30%;
 			}
 			#ver-line-2 {
-				height: 50%;
-				margin-top: 11%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin-left: -0.5px;
+				height: 48%;
 			}
 			#ver-line-3 {
 				height: 15%;
 			}
 			#ver-line-4 {
-				height: 36%;
+				height: 28%;
 				margin-top: -10px;
 			}
 			#ver-line-5 {
@@ -87,13 +90,13 @@
 				background-color: #D7D5D5;
 			}
 			#logo {
-				width: 200px;
-				height: 70px;
+				width: 180px;
+				height: 43px;
 				position: absolute;
-				top: 30%;
+				top: 32%;
 				left: 50%;
-				margin-left: -100px;
-				background: url("logo1.png");
+				margin-left: -90px;
+				background: url("logo.png");
 				background-repeat: no-repeat;
   				background-size: 100% 100%;
   				/*-webkit-animation: spinner 4.2s infinite linear;		/* Chrome, Safari, Opera */*/
@@ -117,10 +120,10 @@
 				font-family: "Impact Comic Sans MS", cursive, sans-serif;
 				font-family: 'Source Sans Pro', sans-serif;*/
 				font-family: 'Segoe UI';
-				opacity: 0.9;
+				opacity: 0.5;
 				color: #fff;
 				position: absolute;
-				top: 40%;
+				top: 38%;
 				left: 50%;
 				margin-left: -220px;
 			}
@@ -128,55 +131,128 @@
 				position: relative;
 				z-index: 2;
 				width: 100%;
-				height: 850px;
+				height: 1280px;
 			}
 			#about-us {
-				width: 890px;
-				height: 270px;
-				margin-left: auto;
-				margin-right: auto;
+				width: 100%;
+				height: 392px;
+				/*margin-left: auto;
+				margin-right: auto;*/
 			}
 			#about-us-head {
-				margin-top: 35px;
+				margin-top: 32px 0;
+			}
+			#about-us-wrapper {
+				width: 800px;
+				height: 332px;
+				margin: 0 auto 0 auto;
 			}
 			#about-us-desc {
+				width: 448px;
+				position: relative;
+				float: left;
+				padding-right: 8px;
 				text-align: justify;
     			text-justify: inter-word;
     			/*font-family: "Comic Sans MS", cursive, sans-serif;*/
-    			font-family: 'Segoe UI';
+    			font-family: 'Segoe UI Verdana';
     			font-size: 14pt;
     			line-height: 34px;
     		}
+    		#rocket-img-container {
+    			width: 300px;
+    			height: 300px;
+    			position: relative;
+    			float: right;
+    		}
 			#areas-of-excel {
 				width: 100%;
-				height: 500px;
+				height: 960px;
 			}
-			#domains {
-				width: 990px;
-				height: 500px;
+			#domains-wrapper {
+				width: 848px;
+				height: 960px;
 				margin-top: 40px;
 				margin-left: auto;
 				margin-right: auto;
 			}
+
 			#development{
-				width: 300px;
-				height: 325px;
-				position: absolute;
+				width: 800px;
+				height: 240px;
+				margin: 32px auto 32px auto;
+			}
+
+			#dev-img-container {
+				position: relative;
 				float: left;
 			}
+
+			#dev-domains-container {
+				position: relative;
+				width: 300px;
+				float: right; 
+				right: 16px;
+			}
+
+			#dev-domains-container h2 {
+				margin: 0;
+				padding: 5px 0;
+				/*font-size: 16pt;*/
+				color: #BFBFBF;
+				font-family: 'Century Gothic';
+			}
+
 			#designing{
-				width: 300px;
-				height: 325px;
-				position: absolute;
-				float: left;
-				margin-left: 310px;
+				width: 832px;
+				height: 240px;
+				margin: 32px auto;
 			}
+			#des-img-container {
+				position: relative;
+				float: right;
+			}
+
+			#des-domains-container {
+				position: relative;
+				float: left; 
+				left: 32px;
+			}
+
+			#des-domains-container h2 {
+				margin: 0;
+				padding: 5px 0;
+				/*font-size: 16pt;*/
+				color: #BFBFBF;
+				font-family: 'Century Gothic';
+			}
+
 			#marketing{
-				width: 300px;
-				height: 325px;
-				position: absolute;
+				width: 832px;
+				height: 240px;
+				margin: 48px auto 0 auto;
+				/*position: absolute;*/
+				/*float: left;*/
+				/*margin-left: 620px;*/
+			}
+			#mar-img-container {
+				position: relative;
 				float: left;
-				margin-left: 620px;
+			}
+
+			#mar-domains-container {
+				position: relative;
+				width: 300px;
+				float: right; 
+				right: 16px;
+			}
+
+			#mar-domains-container h2 {
+				margin: 0;
+				padding: 5px 0;
+				/*font-size: 16pt;*/
+				color: #BFBFBF;
+				font-family: 'Century Gothic';
 			}
 			.center {
 				width: 615px;
@@ -189,7 +265,7 @@
 			#footer {
 				position: relative;
 				z-index: 1;
-				margin-top: -200px;
+				/*margin-top: -200px;*/
 				width: 100%;
 				height: 702px;
 				background-color: #0E7B3E;
@@ -325,7 +401,6 @@
 			       transform: rotate3d(0, 1, 0, 360deg);
 			    }
 			}
-
 		</style>
 		<script type="text/javascript"></script>
 	</head>
@@ -344,27 +419,59 @@
 		<div class="hr-line"></div>
 		<div id="content">
 			<div id="about-us">
-				<!-- <h2 class="center">About us</h2> -->
 				<h2 id="about-us-head" class="center">'Codistan' is the solution for all your virtual needs!</h2>
-				<p id="about-us-desc">
-					Codistan is a company that deals in website development, application development, game development and E-commerce commercial firms and brands. The company aims to holistically cover all areas of the virtual market by providing an integrated ecommerce solution to its customers. We aim to provide our customers with a 360 degree solution by catering to all aspects of the virtual market from coding to handling the aesthetics thereby providing them with a one stop panacea.
-				</p>
+				<div id="about-us-wrapper">
+					<p id="about-us-desc">
+						Codistan is a company that deals in website development, application development, game development and E-commerce commercial firms and brands. The company aims to holistically cover all areas of the virtual market by providing an integrated ecommerce solution to its customers. We aim to provide our customers with a 360 degree solution by catering to all aspects of the virtual market from coding to handling the aesthetics thereby providing them with a one stop panacea.
+					</p>
+					<div id="rocket-img-container">
+						<img src="rocket.png" width="300px" height="300px">
+					</div>
+				</div>
 			</div>
 			<div class="hr-line"></div>
 			<div class="hr-line"></div>
 			<div id="areas-of-excel">
 				<h2 class="center">Areas of Excel</h2>
-				<div id="domains">
+				<!-- <div id="domains-wrapper"> -->
 					<div id="development">
-						<img src="development.png" width="300px" height="124px">
+						<div id="dev-img-container">
+							<img src="development.png" width="384px" height="205px">
+						</div>
+						<div id="dev-domains-container">
+							<h2>Web Development</h2>
+							<h2>App Development</h2>
+							<h2>Game Development</h2>
+							<h2>Desktop Applications</h2>
+						</div>
 					</div>
+					<div class="hr-line"></div>
+					<div class="hr-line"></div>
 					<div id="designing">
-						<img src="designing.png" width="300px" height="124px">
+						<div id="des-domains-container">
+							<h2>Web Designing</h2>
+							<h2>Logo Designing</h2>
+							<h2>Illustration</h2>
+							<h2>Poster Designing</h2>
+						</div>
+						<div id="des-img-container">
+							<img src="designing.png" width="368px" height="221px">
+						</div>
 					</div>
+					<div class="hr-line"></div>
+					<div class="hr-line"></div>
 					<div id="marketing">
-						<img src="marketing.png" width="300px" height="124px">
+						<div id="mar-img-container">
+							<img src="marketing.png" width="459px" height="171px">
+						</div>
+						<div id="mar-domains-container">
+							<h2>Web Development</h2>
+							<h2>App Development</h2>
+							<h2>Game Development</h2>
+							<h2>Desktop Applications</h2>
+						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</div>
 			<div class="hr-line"></div>
 			<div class="hr-line"></div>
